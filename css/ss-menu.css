@@ -1,0 +1,190 @@
+/*!  Plugin: ssMenu (Sticky Side Navigation)
+ *   Author: Asif Mughal
+ *   URL: www.codehim.com
+ *   License: MIT License
+ *   Copyright (c) 2019 - Asif Mughal
+ */
+/* File: ss.emenu.js */
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: linear-gradient(#eee,#ccc);
+	height: 200vh;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Homenaje');
+.ss-menu {
+	font-family: 'Homenaje', sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 58px;
+	height: 100vh;
+}
+
+.ss-menu.open {
+	width: 200px;
+}
+
+
+/* ssMenu Default Theme */
+
+.ss-menu.default {
+	background: #022c43;
+}
+
+.ss-menu.default ul li:hover {
+	background: #115173;
+}
+
+.ss-menu.default ul li a {
+	color: #ffd700;
+}
+
+.ss-menu ul li:hover {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.ss-menu.default ul li .fab {
+	color: rgba(255, 255, 255, 0.40);
+	margin-right: 15px;
+}
+
+.ss-menu ul li {
+	white-space: nowrap;
+	border-radius: 0 30px 30px 0;
+	margin: 0 10px 0 0;
+	overflow: hidden;
+}
+
+.ss-menu ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px 10px;
+	display: block;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+	font-size: 18px;
+	
+}
+
+.ss-menu ul li a:hover {
+	text-indent: 6px;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.ss-menu ul li .fab {
+	margin: 0 8px;
+	margin-right: 15px;
+	color: rgba(255, 255, 255, 0.70);
+	font-size: 22px;
+}
+
+.ss-menu ul li:hover .fab {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+/*Transitions For Specific Items */
+
+.ss-menu,
+.ss-menu ul li,
+.ss-menu ul li a,
+.ss-menu ul li:hover,
+.ss-menu ul li a:hover{
+	transition: .3s all ease-in-out;
+	-webkit-transition: .3s all ease-in-out;
+	-moz-transition: .3s all ease-in-out;
+}
+
+
+/* ssMenu Badge Design */
+
+.ss-badge {
+	width: 16px;
+	height: 16px;
+	background: #e41b17;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 10px;
+	text-align: center;
+	position: absolute;
+}
+
+
+/* Themes For ssMenu */
+
+.red {
+	background: #e00032;
+}
+
+.yellow {
+	background: #fdd835;
+}
+
+.green {
+	background: #0a8f08;
+}
+
+.blue {
+	background: #4d73ff;
+}
+
+.orange {
+	background: #ff3d00;
+}
+
+.brown {
+	background: #6d4c41;
+}
+
+.teal {
+	background: #00897b;
+}
+
+.purple {
+	background: #9c27b0;
+} 
+
+
+/*media*/
+@media screen and (max-width:414px){
+	.ss-menu{
+		width:100%;
+		position: fixed;
+		top:0;
+		left:0;
+		height:3rem;
+	}
+	.ss-menu.open{
+		width:100vw;
+	}
+	.ss-menu ul li{
+		float: left;
+		width:12.5%;
+		margin:0;
+		padding: -5px;
+			border-radius: 10px;
+			overflow: hidden;
+
+	}
+	.ss-menu li a{
+		font-size: 0.3rem;
+		padding: 0;
+	}
+	.ss-menu ul li a:hover {
+		text-indent: 0px;
+		color: rgba(255, 255, 255, 0.85);
+	}
+	.ss-menu li a .fab{
+		width:100%;
+	}
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>side-menu jq demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ss-menu.css">
+    
+</head>
+<body>
+    <nav class="ss-menu">
+        <ul>
+            <li><a href="#"><i class="fab fa-html5"></i>html</a></li>
+            <li><a href="#"><i class="fab fa-css3-alt"></i>css</a></li>
+            <li><a href="#"><span class="ss-badge">3</span><i class="fab fa-js"></i>js</a></li>
+            <li><a href="#"><i class="fab fa-node"></i>node</a></li>
+            <li><a href="#"><i class="fab fa-react"></i>react</a></li>
+            <li><a href="#"><i class="fab fa-vuejs"></i>vue</a></li>
+            <li><a href="#"><i class="fab fa-angular"></i>augular</a></li>
+            <li><a href="#"><i class="fab fa-python"></i>python</a></li>
+        </ul>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.ss.menu.js"></script>
+    <script>
+        $(document).ready(function(){
+           $(".ss-menu").ssMenu({
+               'theme':'brown'
+           });
+        })
+    </script>
+</body>
+</html>
